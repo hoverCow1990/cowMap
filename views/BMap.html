@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<script src='http://api.map.baidu.com/api?v=2.0&ak=UpiGzKvHI69ewiB14LucBygfICIEmpvc' data-main='main.js'></script>
+<link href='../css/BMap.css' rel='stylesheet'>
+
+<title>地图展示</title>
+</head>
+<body>
+<div class='bd-content'>
+	<div class='content-box'>
+		<div class='box-title view-title'>品牌简介</div>
+		<div class='box-intro'>
+			<p>
+			</p>
+		</div>
+	</div>
+	<div class='content-preview'>
+		<div class='preview-title view-title'>商铺照片</div>
+		<div class='preview-img'>
+			<ul>
+				<li><img src=''/></li>
+				<li><img src=''/></li>
+				<li><img src=''/></li>
+			</ul>
+		</div>
+	</div>
+	<div class='content-map'>
+		<div class='map-title view-title'>地图信息</div>
+		<div class='map-tab'>
+			<div id='userPoint'>
+				<span></span>
+				<p>您的坐标</p>
+			</div>
+			<div id='backPoint'>
+				<span></span>
+				<p>商铺坐标</p>
+			</div>
+			<div id='route'>
+				<span></span>
+				<p>交通线路</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div id = 'BMap'></div>
+<div id = 'transInfo'>
+	<div class='Info-hd'>
+		<div class='hd-title'>交通方式:</div>
+		<ul class='hd-tab'>
+			<li class='active'>公交</li>
+			<li>驾车</li>
+			<li>步行</li>
+		</ul>
+	</div>
+	<div class='Info-list'>
+		<ul>
+			<li id='list-bus'></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+</div>
+<script src='../js/plug-in/require.js' data-main='../js/main/BMap.js'></script>
+</body>
+</html>
